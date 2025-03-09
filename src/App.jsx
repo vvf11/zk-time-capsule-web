@@ -58,29 +58,15 @@ function App() {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Дата открытия:</label>
-          <input
-            type="date"
-            value={unlockDate}
-            onChange={(e) => setUnlockDate(e.target.value)}
-            required
-          />
+          <input type="date" value={unlockDate} onChange={(e) => setUnlockDate(e.target.value)} required />
         </div>
         <div className="form-group">
           <label>Сообщение:</label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder="Ваше секретное сообщение"
-            required
-          />
+          <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Ваше секретное сообщение" required />
         </div>
         <div className="form-group">
           <label>Прикрепить фото (опционально):</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handlePhotoChange}
-          />
+          <input type="file" accept="image/*" onChange={handlePhotoChange} />
         </div>
         <button type="submit">Запечатать капсулу</button>
       </form>
