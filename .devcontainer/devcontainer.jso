@@ -1,0 +1,8 @@
+{
+  "name": "ZK Time Capsule Web",
+  "image": "mcr.microsoft.com/devcontainers/rust:1",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "rustup target add wasm32-unknown-unknown && npm install && cargo install wasm-pack"
+}
